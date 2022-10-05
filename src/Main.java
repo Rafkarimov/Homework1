@@ -91,23 +91,25 @@ public class Main {
         System.out.println(i + " = " + (i % 2 == 0));
         return i % 2 == 0;
     }
+
+    final Scanner in = new Scanner(System.in);
+    int inputInt;
+
+//    do {  // Цикл до тех пор, пока мы не получим правильный ввод
+//        System.out.print("Укажите целое число от 1 до 9: ");
+//        try {
+//            inputInt = in.nextInt(); // Блоки для пользовательского ввода
+//            if (inputInt >= 1 && inputInt <= 9) {
+//                break;    // Получил действительный ввод, прекрати зацикливаться
+//            } else {
+//                System.out.println("Вы не ввели число от 0 до 5. Пробовать снова.");
+//                continue; // цикл перезапуска, неправильный номер
+//            }
+//        } catch (final InputMismatchException e) {
+//            System.out.println("You have entered an invalid input. Try again.");
+//            in.next();    // discard non-int input
+//            continue;     // restart loop, didn't get an integer input
+//        }
+//    }while(true);
 }
 
-//    final Scanner in = new Scanner(System.in);
-//    int inputInt;
-//do {  // Loop until we have correct input
-//        System.out.print("Specify an integer between 0 and 5: ");
-//        try {
-//        inputInt = in.nextInt(); // Blocks for user input
-//        if (inputInt >= 0 && inputInt <= 5)  {
-//        break;    // Got valid input, stop looping
-//        } else {
-//        System.out.println("You have not entered a number between 0 and 5. Try again.");
-//        continue; // restart loop, wrong number
-//        }
-//        } catch (final InputMismatchException e) {
-//        System.out.println("You have entered an invalid input. Try again.");
-//        in.next();    // discard non-int input
-//        continue;     // restart loop, didn't get an integer input
-//        }
-//        } while (true);
